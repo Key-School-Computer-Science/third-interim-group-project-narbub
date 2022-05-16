@@ -89,7 +89,7 @@ def resolve_turns(poke1,move1,poke2,move2):
                     print("Player 2, all your pokemon have now fainted. Player 1 wins!")
                     quit()
     print("Player 1: " + active_pokemon_team1 + " took " + str(movedmgtopoke1) + " damage and has " + str(team1[active_pokemon_team1][0]) + "/" + str(pokedex[active_pokemon_team1][0]) + " hp left. Its speed was decreased by " + str(speeddmgfrompoke2) + ".")
-    print("Player 2: " + active_pokemon_team2 + " took " + str(movedmgtopoke2) + " damage and has " + str(team1[active_pokemon_team2][0]) + "/" + str(pokedex[active_pokemon_team2][0]) + " hp left. Its speed was decreased by " + str(speeddmgfrompoke1) + ".")
+    print("Player 2: " + active_pokemon_team2 + " took " + str(movedmgtopoke2) + " damage and has " + str(team2[active_pokemon_team2][0]) + "/" + str(pokedex[active_pokemon_team2][0]) + " hp left. Its speed was decreased by " + str(speeddmgfrompoke1) + ".")
     print("A new round begins.")
     current_turn="turn1"
 
