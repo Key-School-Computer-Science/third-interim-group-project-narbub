@@ -41,7 +41,7 @@ def resolve_turns(poke1,move1,poke2,move2):
             locals()[str(move_list[move2][4])+"1"]=move_list[move2][5](locals()[str(move_list[move2][4])+"2"])
         #now we calculate damage and if move1 hits:
         if random.randrange(99)<move_list[move1][1]:
-            team2.update({poke2:(team2[poke2][0]-movedmgtopoke2,team2[poke2][1]-speeddmgfrompoke1,team2[poke2][3],team2[poke2][4],team2[poke2][5],team2[poke2][5])})
+            team2.update({poke2:(team2[poke2][0]-movedmgtopoke2,team2[poke2][1]-speeddmgfrompoke1,team2[poke2][2],team2[poke2][3],team2[poke2][4],team2[poke2][5],team2[poke2][6])})
             if team2[poke2][1]<=0:
                 movedmgtopoke1=0
                 del team2[poke2]
@@ -52,7 +52,7 @@ def resolve_turns(poke1,move1,poke2,move2):
                     quit()
         #now we calculate damage and if move2 hits:
         if random.randrange(99)<move_list[move2][1]:
-            team1.update({poke1:(team1[poke1][0]-movedmgtopoke1,team1[poke1][1]-speeddmgfrompoke2,team1[poke1][3],team1[poke1][4],team1[poke1][5],team1[poke1][5])})
+            team1.update({poke1:(team1[poke1][0]-movedmgtopoke1,team1[poke1][1]-speeddmgfrompoke2,team1[poke1][2],team1[poke1][3],team1[poke1][4],team1[poke1][5],team1[poke1][6])})
             if team1[poke1][1]<=0:
                 del team1[poke1]
                 if len(team1)>0:
@@ -69,7 +69,7 @@ def resolve_turns(poke1,move1,poke2,move2):
             locals()[str(move_list[move1][4])+"1"]=move_list[move1][5](locals()[str(move_list[move1][4])+"1"])
         #now we calculate damage and if  move2 hits:
         if random.randrange(99)<move_list[move2][1]:
-            team1.update({poke1:(team1[poke1][0]-movedmgtopoke1,team1[poke1][1]-speeddmgfrompoke2,team1[poke1][3],team1[poke1][4],team1[poke1][5],team1[poke1][5])})
+            team1.update({poke1:(team1[poke1][0]-movedmgtopoke1,team1[poke1][1]-speeddmgfrompoke2,team1[poke1][2],team1[poke1][3],team1[poke1][4],team1[poke1][5],team1[poke1][6])})
             if team1[poke1][1]<=0:
                 movedmgtopoke2=0
                 del team1[poke1]
@@ -80,7 +80,7 @@ def resolve_turns(poke1,move1,poke2,move2):
                     quit()
         #now we calculate damage and if move1 hits:
         if random.randrange(99)<move_list[move1][1]:
-            team2.update({poke2:(team2[poke2][0]-movedmgtopoke2,team2[poke2][1]-speeddmgfrompoke1,team2[poke2][3],team2[poke2][4],team2[poke2][5],team2[poke2][5])})
+            team2.update({poke2:(team2[poke2][0]-movedmgtopoke2,team2[poke2][1]-speeddmgfrompoke1,team2[poke2][2],team2[poke2][3],team2[poke2][4],team2[poke2][5],team2[poke2])})
             if team2[poke2][1]<=0:
                 del team2[poke2]
                 if len(team2)>0:
