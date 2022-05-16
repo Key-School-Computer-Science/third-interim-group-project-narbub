@@ -38,7 +38,6 @@ def resolve_turns(poke1,move1,poke2,move2):
         if move_list[move1][4]!="n/a":
             locals()[str(move_list[move1][4])+"1"]=move_list[move1][5](locals()[str(move_list[move1][4])+"1"])
         if move_list[move2][4]!="n/a":
-            mutable_variable=globals()[str(move_list[move1][4])+"2"]
             locals()[str(move_list[move2][4])+"1"]=move_list[move2][5](locals()[str(move_list[move2][4])+"2"])
         #now we calculate damage and if move1 hits:
         if random.randrange(99)<move_list[move1][1]:
